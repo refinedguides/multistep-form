@@ -4,9 +4,13 @@ Guide users through a process with a step-by-step form wizard.
 
 ### Features Covered
 
-- [ ] Dynamic step indicator
-- [ ] Progress steps
-- [ ] Navigates steps
-- [ ] Validate steps
-- [ ] Manage tab/focus
-- [ ] Form submission
+- [x] Dynamic step indicator
+- [x] Progress steps
+- [x] Navigates steps
+- [x] Validate steps
+- [x] Manage tab/focus
+- [x] Form submission
+
+### Screenshot
+
+![Multi-step Form](https://raw.githubusercontent.com/refinedguides/multistep-form/main/screenshot.png)
