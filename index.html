@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multistep Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form class="form-wizard">
+      <!-- .completed -->
+      <div class="completed" hidden>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+        </svg>
+
+        <h3>Registration Successful!</h3>
+        <p>Your account has been created.</p>
+      </div>
+      <!-- /.completed -->
+
+      <h1>Registration</h1>
+
+      <!-- .progress-container -->
+      <div class="progress-container">
+        <div class="progress"></div>
+
+        <ol>
+          <li class="current">Personal Info</li>
+          <li>Contact Info</li>
+          <li>Account Info</li>
+          <li>About</li>
+        </ol>
+      </div>
+      <!-- /.progress-container -->
+
+      <!-- .steps-container -->
+      <div class="steps-container">
+        <div class="step">
+          <h3>Personal Information</h3>
+
+          <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-control">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <div class="step">
+          <h3>Contact Information</h3>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+        </div>
+        <div class="step">
+          <h3>Account Information</h3>
+
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+        </div>
+        <div class="step">
+          <h3>About</h3>
+
+          <div class="form-control">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" rows="4" required></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- /.steps-container -->
+
+      <!-- .controls -->
+      <div class="controls">
+        <button type="button" class="prev-btn">Prev</button>
+        <button type="button" class="next-btn">Next</button>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+      <!-- /.controls -->
+    </form>
+  </body>
+</html>
