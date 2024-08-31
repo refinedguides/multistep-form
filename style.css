@@ -48,6 +48,11 @@ textarea {
   border-radius: 4px;
   width: 100%;
   font-size: 16px;
+  text-align: start;
+}
+
+input[type="tel"] {
+  direction: inherit;
 }
 
 textarea {
@@ -124,6 +129,11 @@ button[type="submit"]:active {
   transform: scaleX(0);
   transform-origin: left;
   transition: 0.3s;
+}
+
+/* if page is rtl adjust the transform origin */
+html[dir="rtl"] .progress-container .progress {
+  transform-origin: right;
 }
 
 .progress-container ol {

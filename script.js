@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     steps.forEach((step, index) => {
-      step.style.transform = `translateX(-${currentStep * 100}%)`;
+      const percentage = document.documentElement.dir === "rtl" ? 100 : -100;
+      step.style.transform = `translateX(${currentStep * percentage}%)`;
       step.classList.toggle("current", currentStep === index);
     });
 
